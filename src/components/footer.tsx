@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary/50 border-t">
+    <footer className="border-t border-border/10">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-6 max-w-7xl px-4 md:px-6">
         <p className="text-sm text-muted-foreground mb-4 sm:mb-0">
           &copy; {new Date().getFullYear()} Adarsh Tiwari. All rights reserved.

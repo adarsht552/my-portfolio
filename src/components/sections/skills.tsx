@@ -1,7 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { FC, SVGProps } from 'react';
-
-// SVG Icons for skills
 
 const FlutterIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -76,7 +74,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="w-full py-20 md:py-32 bg-background">
+    <section id="skills" className="w-full py-20 md:py-32">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Skills & Experience</h2>
@@ -86,7 +84,7 @@ export default function SkillsSection() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {skills.map((skill) => (
-            <Card key={skill.name} className="flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-primary">
+            <Card key={skill.name} className="flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 hover:border-primary/30 bg-secondary/20 backdrop-blur-lg border border-border/10">
               <CardContent className="flex flex-col items-center justify-center gap-4 p-0">
                 <skill.Icon className="w-16 h-16 text-primary" />
                 <p className="font-semibold text-lg">{skill.name}</p>
