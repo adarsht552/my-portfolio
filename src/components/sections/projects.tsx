@@ -9,7 +9,7 @@ const projects = [
     title: "Signode",
     description: "Developed a cross-platform mobile application for Signode, an international leader in packaging solutions. Utilized Flutter for a responsive user interface, with a Node.js and PostgreSQL backend to manage real-time data, streamline field operations, and enhance workflow efficiency across global teams.",
     technologies: ["Flutter", "Node.js", "PostgreSQL"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imgUrl: 'https://placehold.co/600x400.png',
     aiHint: 'industrial packaging',
     category: "Enterprise",
     status: "Completed",
@@ -20,7 +20,7 @@ const projects = [
     title: "Jagatjit Industries",
     description: "Built two cross-platform mobile applications for Jagatjit Industries: the Jagatjit App for internal communication and operational tracking, and the Tour Plan App for managing and streamlining field staff tour planning and reporting. Leveraged Flutter for a seamless user experience, with a secure and scalable backend powered by Node.js and PostgreSQL.",
     technologies: ["Flutter", "Node.js", "PostgreSQL"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imgUrl: 'https://placehold.co/600x400.png',
     aiHint: 'corporate communication',
     category: "Enterprise",
     status: "Completed",
@@ -31,7 +31,7 @@ const projects = [
     title: "BoonEdam",
     description: "Developed a cross-platform mobile application for BoonEdam, integrating a Flutter-based front-end with a scalable Node.js and PostgreSQL backend. The solution prioritized seamless user experience, real-time data processing, and secure database management to support access control and facility management operations.",
     technologies: ["Flutter", "Node.js", "PostgreSQL"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imgUrl: 'https://placehold.co/600x400.png',
     aiHint: 'access control',
     category: "Enterprise",
     status: "Completed",
@@ -42,7 +42,7 @@ const projects = [
     title: "IAP Growth Tracker",
     description: "Created a cross-platform mobile application to help parents and healthcare professionals track children's growth data based on IAP standards. The app leverages local storage for secure offline access and has surpassed 10,000 downloads on the Play Store, reflecting its practicality and user trust.",
     technologies: ["Flutter", "Local Storage"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imgUrl: 'https://placehold.co/600x400.png',
     aiHint: 'child growth chart',
     category: "Healthcare",
     status: "Live",
@@ -54,7 +54,7 @@ const projects = [
     title: "Tour Plan",
     description: "Developed a cross-platform mobile application to manage and streamline field staff tour planning and reporting. The app features a smooth Flutter interface and a robust backend built with Node.js and PostgreSQL, enabling efficient data handling, route tracking, and real-time reporting capabilities.",
     technologies: ["Flutter", "Node.js", "PostgreSQL"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imgUrl: 'https://placehold.co/600x400.png',
     aiHint: 'route planning',
     category: "Business",
     status: "Completed",
@@ -65,7 +65,7 @@ const projects = [
     title: "LabDost",
     description: "Designed a cross-platform mobile application aimed at simplifying lab test bookings and medical diagnostics. The app features a user-friendly Flutter interface with a secure and scalable backend powered by Node.js and PostgreSQL. It enables users to browse tests, schedule appointments, and track reports—all in one place.",
     technologies: ["Flutter", "Node.js", "PostgreSQL"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imgUrl: 'https://placehold.co/600x400.png',
     aiHint: 'medical lab',
     category: "Healthcare",
     status: "Completed",
@@ -89,7 +89,7 @@ export default function ProjectsSection() {
             <Card key={project.title} className="group overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 flex flex-col bg-secondary/20 backdrop-blur-lg border border-border/10">
               <CardHeader className="p-0 overflow-hidden">
                 <Image
-                  src={project.imageUrl}
+                  src={project.imgUrl}
                   alt={project.title}
                   width={600}
                   height={400}
