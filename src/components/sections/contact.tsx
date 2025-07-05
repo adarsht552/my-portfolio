@@ -56,13 +56,13 @@ export default function ContactSection() {
     <section id="contact" className="w-full py-20 md:py-32">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Get in Touch</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Join Forces With Me</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
             Have a project in mind or just want to say hello? Feel free to reach out.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-12">
-            <Card className="shadow-lg bg-secondary/20 backdrop-blur-lg border border-border/10">
+            <Card className="bg-card border border-border/50">
                 <CardHeader>
                     <CardTitle className="font-headline text-2xl">Send me a message</CardTitle>
                 </CardHeader>
@@ -76,7 +76,7 @@ export default function ContactSection() {
                             <FormItem>
                               <FormLabel>Name</FormLabel>
                               <FormControl>
-                                <Input placeholder="Your Name" {...field} className="bg-background/50" />
+                                <Input placeholder="Your Name" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -89,7 +89,7 @@ export default function ContactSection() {
                             <FormItem>
                               <FormLabel>Email</FormLabel>
                               <FormControl>
-                                <Input type="email" placeholder="your.email@example.com" {...field} className="bg-background/50" />
+                                <Input type="email" placeholder="your.email@example.com" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -102,19 +102,19 @@ export default function ContactSection() {
                             <FormItem>
                               <FormLabel>Message</FormLabel>
                               <FormControl>
-                                <Textarea placeholder="Your message..." className="min-h-[120px] bg-background/50" {...field} />
+                                <Textarea placeholder="Your message..." className="min-h-[120px]" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
                           )}
                         />
-                        <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30">Send Message</Button>
+                        <Button type="submit" className="w-full">Send Message</Button>
                       </form>
                     </Form>
                 </CardContent>
             </Card>
             <div className="flex flex-col justify-center space-y-6">
-                <Card className="bg-secondary/20 backdrop-blur-lg border border-border/10">
+                <Card className="bg-card border-border/50">
                     <CardContent className="p-6 flex items-center gap-4">
                         <div className="bg-primary/10 p-3 rounded-full">
                             <Mail className="h-6 w-6 text-primary" />
@@ -127,7 +127,7 @@ export default function ContactSection() {
                         </div>
                     </CardContent>
                 </Card>
-                <Card className="bg-secondary/20 backdrop-blur-lg border border-border/10">
+                <Card className="bg-card border-border/50">
                     <CardContent className="p-6 flex items-center gap-4">
                         <div className="bg-primary/10 p-3 rounded-full">
                             <Phone className="h-6 w-6 text-primary" />

@@ -84,9 +84,9 @@ export default function ProjectsSection() {
             Here are some of the projects I've worked on, showcasing my skills and experience.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.title} className="group overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 flex flex-col bg-secondary/20 backdrop-blur-lg border border-border/10">
+            <Card key={project.title} className="group overflow-hidden transition-all duration-300 flex flex-col bg-card border border-border/50 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 rounded-lg">
               <CardHeader className="p-0 overflow-hidden">
                 <Image
                   src={project.imgUrl}
@@ -98,8 +98,8 @@ export default function ProjectsSection() {
                 />
               </CardHeader>
               <div className="p-6 flex flex-col flex-grow">
-                <CardTitle className="font-headline text-2xl mb-2">{project.title}</CardTitle>
-                <CardContent className="p-0 text-muted-foreground mb-4 flex-grow">
+                <CardTitle className="font-headline text-xl mb-2">{project.title}</CardTitle>
+                <CardContent className="p-0 text-muted-foreground mb-4 flex-grow text-sm">
                   <p>{project.description}</p>
                 </CardContent>
                 <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -118,20 +118,20 @@ export default function ProjectsSection() {
                    )}
                 </div>
               </div>
-              <CardFooter className="p-6 bg-secondary/30 flex justify-end gap-4 mt-auto">
-                <Button variant="outline" asChild>
+              <CardFooter className="p-6 bg-background/50 flex justify-end gap-2 mt-auto">
+                <Button variant="outline" size="sm" asChild>
                   <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" /> Code
                   </a>
                 </Button>
                 {project.playStoreUrl ? (
-                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30">
+                   <Button size="sm" asChild>
                     <a href={project.playStoreUrl} target="_blank" rel="noopener noreferrer">
                       <Play className="mr-2 h-4 w-4" /> Play Store
                     </a>
                   </Button>
                 ) : (
-                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30">
+                  <Button size="sm" asChild>
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
                     </a>

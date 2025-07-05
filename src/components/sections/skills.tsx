@@ -84,7 +84,7 @@ export default function SkillsSection() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {skills.map((skill) => (
-            <Card key={skill.name} className="flex flex-col items-center justify-center text-center p-6 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 hover:border-primary/30 bg-secondary/20 backdrop-blur-lg border border-border/10">
+            <Card key={skill.name} className="flex flex-col items-center justify-center text-center p-6 transition-all duration-300 bg-card border border-border/50 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
               <CardContent className="flex flex-col items-center justify-center gap-4 p-0">
                 <skill.Icon className="w-16 h-16 text-primary" />
                 <p className="font-semibold text-lg">{skill.name}</p>
