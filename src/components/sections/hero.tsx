@@ -1,7 +1,6 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const titles = ["Flutter Developer", "Full-Stack Developer", "Android & iOS Developer"];
@@ -47,14 +46,6 @@ export default function HeroSection() {
     <section id="home" className="w-full py-24 md:py-32 lg:py-40">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6 text-center">
-          <Image
-            src="https://placehold.co/200x200.png"
-            alt="Adarsh Tiwari"
-            width={160}
-            height={160}
-            className="rounded-full border-4 border-primary/30 shadow-2xl shadow-primary/20"
-            data-ai-hint="developer avatar"
-          />
           <div className="space-y-2">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Adarsh Tiwari
