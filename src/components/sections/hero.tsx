@@ -56,7 +56,7 @@ export default function HeroSection() {
             </p>
           </div>
           <p className="max-w-[700px] text-foreground/80 md:text-xl">
-            I build beautiful and robust web applications from front to back.
+            I build beautiful and robust mobile applications for iOS and Android.
             Passionate about clean code, great user experiences, and continuous learning.
           </p>
           <div className="flex gap-4">
