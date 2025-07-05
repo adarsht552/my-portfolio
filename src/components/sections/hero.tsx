@@ -9,8 +9,8 @@ const deletingSpeed = 50;
 const delay = 2000;
 
 const stats = [
-    { value: "6+", label: "Years Experience" },
-    { value: "20+", label: "Projects Completed" },
+    { value: "1.8+", label: "Years Experience" },
+    { value: "10+", label: "Projects Completed" },
     { value: "10+", label: "Happy Clients" },
 ];
 

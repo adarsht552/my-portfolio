@@ -122,7 +122,7 @@ export default function ContactSection() {
                         <div>
                             <h3 className="text-lg font-semibold">Email</h3>
                             <a href="mailto:adarsh.tiwari@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                                adarsh.tiwari@example.com
+                                adarshti552@gmail.com
                             </a>
                         </div>
                     </CardContent>
@@ -134,7 +134,7 @@ export default function ContactSection() {
                         </div>
                         <div>
                             <h3 className="text-lg font-semibold">Phone</h3>
-                            <p className="text-muted-foreground">+1 (123) 456-7890</p>
+                            <p className="text-muted-foreground">+91 7208694864</p>
                         </div>
                     </CardContent>
                 </Card>
